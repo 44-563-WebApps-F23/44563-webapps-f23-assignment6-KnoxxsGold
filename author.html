@@ -15,10 +15,36 @@
     <input type="button" onclick="resolveForm()" value="Get values from form">
 </form>
 
+<form>
+    <input id="hiddenAuthor" value="Dickens">The hidden author name</input>
+    <input type="text" id="guessAuthor" name="guessAuthor" placeholder="Guess the Author">
+    <button id="checkButton" onclick="checkAuthor()">Check the guess</button>
+    <p id="result"></p>
+</form>
 
 <p id="result">This text will be replaced </p>
 
 <script> 
+
+//var x = 2;
+var good = 0;
+var oops = 0;
+
+function checkAuthor()
+{
+    var hiddenAuthorValue = document.getElementById("hiddenAuthor").value;
+    var guessAuthorValue = document. getElementById("guessAuthor").value;
+
+    if (guessAuthorValue === hiddenAuthorValue)
+    {
+        document.getElementById("result").textContent = "You got it right!";
+        good++;
+    } else 
+    {
+        document.getElementById("result").textContent = "Sorry!";
+        oops++;
+    }
+}
 
 function resolveForm (){
     console.log("Getting form values")
