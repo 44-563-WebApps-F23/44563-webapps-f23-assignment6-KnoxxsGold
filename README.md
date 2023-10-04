@@ -3,6 +3,6 @@
 Introduction to Java Script and DOM
 
 ## Hosted at 
-[author.html][author-link]: https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-KnoxxsGold/author.html
+44-563-webapps-f23.github.io/author.html
 
 
